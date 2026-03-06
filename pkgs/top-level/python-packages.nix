@@ -8330,6 +8330,8 @@ self: super: with self; {
 
   labgrid = callPackage ../development/python-modules/labgrid { };
 
+  labgrid-main = callPackage ../development/python-modules/labgrid-main { };
+
   labmath = callPackage ../development/python-modules/labmath { };
 
   laces = callPackage ../development/python-modules/laces { };
