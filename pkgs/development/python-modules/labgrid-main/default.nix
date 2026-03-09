@@ -41,6 +41,13 @@ buildPythonPackage rec {
     hash = "sha256-nnmfZ7GBcefiDW5JSTyMryNOOZLZt2UzqDqksUrIwnQ=";
   };
 
+  patches = [
+    (fetchpatch {
+      url = "https://github.com/labgrid-project/labgrid/pull/1836.patch";
+      sha256 = "sha256-GLAzote6BuxIzCUuc8N4mPCFZepW3lmJR1t+ZArZ/Kc=";
+    })
+  ];
+
   build-system = [
     setuptools
     setuptools-scm
