@@ -2,6 +2,7 @@
   lib,
   buildPythonPackage,
   fetchFromGitHub,
+  fetchpatch,
   pytestCheckHook,
   lxml,
   requests,
@@ -19,6 +20,13 @@ buildPythonPackage rec {
     tag = "v${version}";
     hash = "sha256-HoHXqAqVPqaw7WkRCi5AJ2dKG8IZX7l7bTp22KZBzdU=";
   };
+
+  patches = [
+    (fetchpatch {
+      url = "https://github.com/foxey/py-netgear-plus/pull/145.patch";
+      sha256 = "sha256-GoX5J0dgb1/Q3zUHdE4To+kAi+ortDFSau49d37DM7Q=";
+    })
+  ];
 
   build-system = [ hatchling ];
 
