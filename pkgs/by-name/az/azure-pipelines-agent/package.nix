@@ -184,6 +184,7 @@ buildDotnetModule rec {
       "Listener.AgentAutoLogonTestL0.TestAutoLogonRunOnce"
       "Listener.AgentAutoLogonTestL0.TestAutoLogonUnConfigure"
       "Listener.AgentAutoLogonTestL0.TestAutoLogonUnConfigureForDifferentUser"
+      "Listener.AgentL0.TestMetadataUpdate"
       "Listener.Configuration.ArgumentValidatorTestsL0.WindowsLogonAccountValidator"
       "Listener.Configuration.ConfigurationManagerL0.CanEnsureConfigure"
       "Listener.Configuration.ConfigurationManagerL0.CanEnsureConfigureForDeploymentPool"
